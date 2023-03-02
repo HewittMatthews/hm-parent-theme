@@ -12,7 +12,7 @@ if ( ! defined( '_S_VERSION' ) ) {
 	define( '_S_VERSION', '1.0.0' );
 }
 
-require 'hm-theme/hm-core-functions.php';
+require 'hm-core/hm-core-functions.php';
 
 //Define theme version number so we can force use updated scripts/styles
 $theme = wp_get_theme();
@@ -27,7 +27,7 @@ function hm_enqueue_assets() {
 	
 	global $post;
 	
-    wp_enqueue_style( 'hm-core-styles', get_template_directory_uri().'/hm-theme/hm-core-styles.css', array(), HM_THEME_VERSION);
+    wp_enqueue_style( 'hm-core-styles', get_template_directory_uri().'/hm-core/hm-core-styles.css', array(), HM_THEME_VERSION);
 
 }
 
