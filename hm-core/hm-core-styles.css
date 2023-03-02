@@ -1,0 +1,25 @@
+/************************************************
+ * General Theme Styles
+ ************************************************/
+
+section {
+	padding: min(5vw, 5em) 0;
+}
+
+.hm-row {
+    max-width: var(--siteMaxWidth);
+    width: var(--siteWidth);
+    margin: 0 auto;
+}
+
+header.site-header > .hm-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+    padding: 1rem 0;
+}
+
+header.site-header > .hm-row :where(img) {
+	max-width: 200px;
+}
